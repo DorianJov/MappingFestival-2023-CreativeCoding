@@ -37,7 +37,6 @@ boolean back = true;
 
 float manualDist;
 
-
 float freq1;
 
 float circleSize =3000;

@@ -59,7 +59,6 @@ boolean back = true;
 
 float manualDist;
 
-
 float freq1;
 
 float circleSize =3000;
@@ -138,7 +137,7 @@ float startingPoint = 0;
 
  public void draw() {
 
-  /////////Camera Cipping
+  /////////Camera Clipping
   float fov = PI/3.0f;
   float cameraZ = (height/2.0f) / tan(fov/2.0f);
   perspective(fov, PApplet.parseFloat(width)/PApplet.parseFloat(height),
