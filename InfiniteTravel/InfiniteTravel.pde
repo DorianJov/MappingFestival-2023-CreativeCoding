@@ -18,7 +18,7 @@ int[] randomScaleSmall = new int[5100];
 
 boolean showCity = false;
 boolean [] scenes = new boolean [7];
-int camSpeed = 300;
+int camSpeed = 224;
 
 PShader blur;
 float vx = 0.3;
@@ -167,18 +167,18 @@ void draw() {
   }
 
 
-  if (lastDist>9000) {
+  if (lastDist>10000) {
     //lastDist-=300;
   } else {
-    camSpeed = 50;
+    camSpeed = 10;
   }
   
   if(scenes[6]){
-    camSpeed = 455;
+    camSpeed = 280;
   }
   
   if(scenes[5]){
-  camSpeed = 410;
+  camSpeed = 250;
   }
 
   if(lastDist<308055&&lastDist>300000){
@@ -186,8 +186,9 @@ void draw() {
   }
   
   if(scenes[3]){
-  camSpeed = 100;
+  camSpeed = 80;
   }
+  //camSpeed = 175;
   lastDist-=camSpeed;
   
 
@@ -606,7 +607,7 @@ void showScenes(boolean [] valueForSwitch) {
 
       translate(0, 0, 200);
       //rotate(0.1);
-      for (int w = 0; w<5; w++) {
+      for (int w = 0; w<2; w++) {
         circle(randomPosX[i], (height*4), size-w*400);
       }
     }
